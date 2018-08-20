@@ -54,7 +54,7 @@ class Solution:
     def __init__(self, maze_str):
         self.maze = Maze(maze_str)
         self.start = (1,1)
-        self.end   = (8,8)
+        self.end   = (self.maze.height-2, self.maze.width-2)
         self.path = []
 
     def print_maze(self):
